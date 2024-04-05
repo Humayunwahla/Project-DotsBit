@@ -1,11 +1,9 @@
-import FeaturedCourses from "@/components/FeaturedCourses";
+
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import HoverCard from "@/components/HoverCard";
-import MovingSlider from "@/components/MovingSlider";
+
 import Navbar from "@/components/Navbar";
-import WavyBackgroundDom from "@/components/WavyBackgroundDom";
-import WhyChose from "@/components/WhyChose";
+
 import background from '@/assets/Background-4.png'
 import Image from "next/image";
 import Rating from "@/components/Rating";
