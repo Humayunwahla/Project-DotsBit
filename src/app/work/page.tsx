@@ -26,7 +26,7 @@ function Work() {
      <div className='flex lg:flex-row flex-col text-center mt-20'>
         <div className='w-1/6 text-left'><h1 className=' aboutH'><p className=' font-cocosharp'>Our Work</p></h1></div>
         <div className='lg:w-5/6 text-left'>
-            <p className=' font-poppins'>Bringing brands to life through<br/> strategy, design and code</p>
+            <p className=' font-poppins lg:text-4xl text-xl'>Bringing brands to life through<br/> strategy, design and code</p>
         </div>
      </div>
     </div>
