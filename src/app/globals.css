@@ -1,0 +1,417 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/*body {
+
+  background-color: black; 
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+*/
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+ }
+/*.poppins{
+  font-family: var(--font-poppins);
+} */
+.Background3{
+  background-image: url('../assets/Background-4.png');
+ 
+
+}
+.about{
+  background-image: url('../assets/about.png'); 
+  width: auto;
+  height: auto;
+}
+.fontlogo{
+ 
+  font-family: Gatteway Signature;
+font-size: 19px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.03em;
+
+
+}
+.logo1{
+  background-image: url('../assets/logo1.png');
+  width: 195px;
+height: 41.85px;
+top: 6px;
+
+}
+.NavbarContent{
+  font-family: poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.NavBtn{
+  width: 272px;
+height: 54px;
+left: 1008px;
+border-radius: 86px;
+background: rgba(119, 219, 183, 1);
+
+
+}
+.NavBtnCont{
+  font-family: poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.03em;
+text-align: center;
+
+}
+.BtnHome{
+  width: 241px;
+height: 66px;
+top: 539px;
+left: 591px;
+border-radius: 86px;
+background: rgba(119, 219, 183, 1);
+align-items: center;
+
+
+}
+.rate{
+  width: auto;
+  height: auto;
+  top: 850px;
+  
+  background: rgba(119, 219, 183, 1);
+
+
+
+}
+.rating{
+  font-family: poppins;
+font-size: 48px;
+font-weight: 700;
+line-height: 59px;
+letter-spacing: 0em;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+
+
+}
+.ratingSub{
+  font-family: poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.03em;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+
+
+}
+.aboutfont{
+  font-family: poppins;
+font-size: 34px;
+font-weight: 500;
+line-height: 51px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.aboutH{
+  font-family: CocoSharp Trial;
+font-size: 22px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+
+
+}
+.designH{
+  font-family: CocoSharp Trial;
+font-size: 56px;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 0em;
+
+
+}.designH2{
+  font-family: CocoSharp Trial;
+font-size: 32px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0em;
+margin-top: 25px;
+
+
+}
+.designP{
+  font-family: poppins;
+font-size: 11px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 10px;
+
+}
+.designBtn{
+  width: 199px;
+height: 66px;
+top: 1864px;
+left: 620px;
+border-radius: 86px;
+background: rgba(119, 219, 183, 1);
+
+
+}
+.serviceBox{
+ 
+
+top: 238px;
+border-radius: 8px;
+border: 1px;
+border-color: black;
+border: 1px solid rgba(227, 227, 227, 1);
+
+}
+.serviceH{
+  font-family: CocoSharp Trial;
+font-size: 28px;
+font-weight: 700;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.serviceP{
+  font-family: poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0.03em;
+text-align: left;
+
+}
+.expertBg{
+  background: rgb(245, 246, 248);
+}
+
+.expertBox{
+  width: 139px;
+height: 79px;
+left: 177px;
+border-radius: 44px;
+background: rgba(255, 255, 255, 1);
+
+
+}
+.teamBox{
+  width: 217px;
+height: 301px;
+
+}
+.teamH{
+  font-family: CocoSharp Trial;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.teamP{
+  font-family: poppins;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.testimonialBox{
+  width: 283px;
+height: 466px;
+top: 355px;
+border-radius: 44px;
+border: 1px;
+background: rgba(255, 255, 255, 1);
+border: 1px solid rgba(234, 234, 234, 1);
+text-align: center;
+
+}
+.testimonialP{
+  font-family: poppins;
+font-size: 15px;
+font-weight: 500;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.testimonialH{
+  font-family: poppins;
+font-size: 12px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: poppins;
+font-size: 15px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.testiBg{
+  background-image: url('../assets/testimonial/pic2.png');
+}
+.footerP{
+  font-family: poppins;
+font-size: 22px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.footerH{
+  font-family: CocoSharp Trial;
+font-size: 32px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.footerBtn{
+  width: 241px;
+height: 66px;
+top: 22px;
+left: 1039px;
+border-radius: 86px;
+background: rgba(119, 219, 183, 1);
+
+}
+.footerF{
+
+font-family: Gilroy-Medium;
+
+line-height: 34px;
+letter-spacing: 0em;
+
+
+}
+.homeH{
+  font-family: CocoSharp Trial;
+
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.homeP{
+  font-family: poppins;
+
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.03em;
+text-align: center;
+
+}
+.touchBtn{
+  width: 272px;
+height: 54px;
+top: 738px;
+left: 170px;
+border-radius: 86px;
+background: rgba(119, 219, 183, 1);
+
+
+}
+.serviH{
+  font-family: CocoSharp Trial;
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.serviP{
+  font-family: poppins;
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.serviPara{
+  font-family: poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.serviJob{
+  font-family: CocoSharp Trial;
+font-size: 33px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.slide-track{
+  width:calc(500px * 10);
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll{
+   
+  0% {
+    transform:translateX(0) ;
+  }
+    100% {
+      transform:translateX(calc(-250px * 5)) ;
+    }
+   
+  
+}
+.slide-track:hover{
+  animation-play-state: paused;
+}

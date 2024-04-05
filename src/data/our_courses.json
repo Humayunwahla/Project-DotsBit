@@ -1,0 +1,53 @@
+{
+    "courses":[
+
+        {
+            "id":1,
+            "title":"Flutter development",
+            "description":" Flutter development is very important skill nowadays",
+            "instructor":"Sharoz Mukhtar",
+            "price":99.9,
+            "isFeatured":true
+        },
+        {
+            "id":2,
+            "title":"Web development",
+            "description":" Web development is very important skill nowadays",
+            "instructor":"Humayun Wahla",
+            "price":99.9,
+            "isFeatured":true
+        },
+        {
+            "id":3,
+            "title":"Video Editing",
+            "description":" Video Editing is very important skill nowadays to make money",
+            "instructor":"Faizan Ahmad",
+            "price":99.9,
+            "isFeatured":true
+        },
+        {
+            "id":4,
+            "title":"Web development",
+            "description":" Web development is very important skill nowadays",
+            "instructor":"Humayun Wahla",
+            "price":99.9,
+            "isFeatured":true
+        },
+        {
+            "id":5,
+            "title":"Web development",
+            "description":" Web development is very important skill nowadays",
+            "instructor":"Humayun Wahla",
+            "price":99.9,
+            "isFeatured":true
+        },
+        {
+            "id":6,
+            "title":"Web development",
+            "description":" Web development is very important skill nowadays",
+            "instructor":"Humayun Wahla",
+            "price":99.9,
+            "isFeatured":true
+        }
+    ]
+}
