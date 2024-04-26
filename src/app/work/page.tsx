@@ -34,27 +34,27 @@ function Work() {
     <div className='flex flex-col items-center md:flex-row gap-[62px] mt-20'>
                 <div>
                     <Image src={design} alt="" />
-                    <h1 className='designH2'>Glazoo</h1>
-                    <p className='designP'>The Pupillary Distance App for Quick and Accurate Eye Measurement</p>
+                    <h1 className='designH2'><span className=' font-poppins'>Glazoo</span></h1>
+                    <p className='designP'><span className=' font-poppins'>The Pupillary Distance App for Quick and Accurate Eye Measurement</span></p>
                 </div>
                 <div>
                     <Image src={design2} alt="" />
-                    <h1 className='designH2'>Basically</h1>
-                    <p className='designP'>Master Fluent and Direct Speech, Minus the Fillers. 
-                    Enhance your communication skills effortlessly</p>
+                    <h1 className='designH2'><span className=' font-poppins'>Basically</span></h1>
+                    <p className='designP'><span className=' font-poppins'>Master Fluent and Direct Speech, Minus the Fillers. 
+                    Enhance your communication skills effortlessly</span></p>
                 </div>
             </div>
 
             <div className='flex flex-col md:flex-row gap-[62px] mt-10'>
                 <div>
                     <Image src={design3} alt="" />
-                    <h1 className='designH2'>Lifedata</h1>
-                    <p className='designP'>Your simple, powerful tracking and visualization tool for measuring and monitoring what matters most</p>
+                    <h1 className='designH2'><span className=' font-poppins'>Lifedata</span></h1>
+                    <p className='designP'><span className=' font-poppins'>Your simple, powerful tracking and visualization tool for measuring and monitoring what matters most</span></p>
                 </div>
                 <div>
                     <Image src={design4} alt="" />
-                    <h1 className='designH2'>Digital Agency</h1>
-                    <p className='designP'>Plannerli help parents to assign a task to their children</p>
+                    <h1 className='designH2'><span className=' font-poppins'>Digital Agency</span></h1>
+                    <p className='designP'><span className=' font-poppins'>Plannerli help parents to assign a task to their children</span></p>
                 </div>
             </div>
     </div>
