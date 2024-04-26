@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Navbar from "@/components/Navbar";
 import pica from '@/assets/pic1.png'
@@ -12,9 +12,42 @@ import pic3 from '@/assets/social/pic3.png'
 import pic4 from '@/assets/social/pic4.png'
 import pic5 from '@/assets/social/pic5.png'
 import pic6 from '@/assets/social/pic6.png'
+import {db} from "../firebaseConfig";
+import {collection, addDoc} from "firebase/firestore"
+
+async function addDataToFireStore(email: string, phone:string, message: string){
+try{
+  const docRef=await addDoc(collection(db, "message"),{
+    email:email,
+    phone:phone,
+    message:message,
+  });
+  console.log("document written with ID" ,docRef.id);
+  return true;
+}catch(error){
+console.error("error adding document" ,error)
+return false;
+}
+}
+
 
 
 function Touch() {
+  const [email, setEmail]= useState("");
+  const [phone,setPhone]=useState("");
+  const [message, setMessage]=useState("");
+
+  const handleSubmit= async(e:any)=>{
+    e.preventDefault();
+    const added = await addDataToFireStore(email, phone, message);
+    if (added){
+      setEmail("");
+      setPhone("");
+      setMessage("");
+
+      alert("Data added to firestore");
+    }
+  };
   return (
     <div>
         <div className=' md:p-10'><Navbar/></div>
@@ -26,7 +59,7 @@ function Touch() {
       />*/}
        <div className='lg:mx-[126px] mx-[50px]'>
      <div className='flex lg:flex-row flex-col text-center mt-20 gap-6'>
-        <div className='w-1/6 text-left'><h1 className=' aboutH'><p className=' font-cocosharp'>Get in Touch</p></h1></div>
+        <div className='md:w-1/6 text-left'><h1 className=' aboutH'><p className=' font-cocosharp'>Get in Touch</p></h1></div>
         <div className='lg:w-5/6 text-left'>
             <p className=' font-poppins text-xl'>Call, email, meet or video call us -<br/> however you’d prefer to work we’d love to<br/> hear from you</p>
         </div>
@@ -36,11 +69,15 @@ function Touch() {
 
         <div className='flex flex-col lg:flex-row  justify-between lg:mx-[126px] sm:mx-[50px] mx-[8px] '>
           {/** Form section*/}
-          <div className="mt-10 flex flex-col lg:w-1/2   gap-y-8 ">
+          <form action="" onSubmit={handleSubmit} className='lg:w-1/2' >
+          <div className="mt-10 flex flex-col    gap-y-8 ">
         <div className="col-span-1 md:col-span-3 ">
           <label htmlFor="first-name" className="block text-sm contact leading-6  text-gray-400  aboutH"><p className=' font-poppins'>Email</p></label>
           <div className="mt-2">
-            <input type="email" name="" id="" className='form-input size-full border-b-2 border-b-black' />
+            <input type="email" name="email"
+              value={email}
+              onChange={(e)=> setEmail(e.target.value)}
+             id="email" placeholder='Email.com' className='form-input size-full h-10  border-b-2 border-b-black' />
        {/**     <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block md:w-full w-96 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/> */}
           </div>
         </div>
@@ -48,24 +85,32 @@ function Touch() {
         <div className=" col-span-1 md:col-span-3">
           <label htmlFor="last-name" className="block text-sm contact leading-6 text-gray-400  aboutH"><p className=' font-poppins'>Phone no.</p></label>
           <div className="mt-2">
-            <input type="number" className='form-input size-full border-b-2 border-b-black' />
+            <input type="number" id='phone'
+             value={phone}
+             onChange={(e)=> setPhone(e.target.value)}
+             placeholder='Phone Number' className='form-input size-full h-10  border-b-2 border-b-black' />
         {/**  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block md:w-full w-96 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/> */}  
           </div>
         </div>
         <div className='items-center  mt-8'>
-                    <div className=''>
-                       <label htmlFor=""  className='contact text-gray-400  aboutH'><p className=' font-poppins'>Message</p></label>
-                  
-                    </div>
+                    
+                       <label htmlFor="message"  className='contact text-gray-400  aboutH'><p className=' font-poppins'>Message</p></label>
+                       
+                    
                     <div className='mt-3  '>
-                      <input type="textarea"  className='form-textarea size-full border-b-2 border-b-black '  />
+                      <input type="textarea" id='message' placeholder='Write message here'
+                         value={message}
+                         onChange={(e)=> setMessage(e.target.value)}
+                        className='form-textarea size-full h-16 border-b-2 border-b-black '
+                          />
              {/**   <textarea name="message" id="" cols="120" rows="5" placeholder='Write a message' className='bg-gray-200 rounded-md '></textarea>*/} 
            </div> 
            </div>
            <div className=''>
-          <button className='touchBtn'><span>Schedule a Meeting</span></button>
+          <button type='submit' className='touchBtn font-poppins'><span className=' font-poppins'>Schedule a Meeting</span></button>
         </div>
         </div>
+        </form>
         
           {/** Form section End */}
           <div className='flex flex-col mx-auto sm:flex-row items-center gap-16'>

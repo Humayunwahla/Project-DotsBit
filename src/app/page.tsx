@@ -13,13 +13,14 @@ import Service from "@/components/Service";
 import Expertise from "@/components/Expertise";
 import Team from "@/components/Team";
 import Testimonial from "@/components/Testimonial";
+import CMS from "./cms/CMS";
 
 
 
 export default function Home() {
   return (
     <main className="">
-      
+  { /**  <CMS/> */} 
   <div className="Background3 md:p-10 ">
     
   <Navbar />
