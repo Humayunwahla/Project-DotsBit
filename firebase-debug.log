@@ -1,0 +1,43 @@
+[debug] [2024-04-26T11:58:09.613Z] ----------------------------------------------------------------------
+[debug] [2024-04-26T11:58:09.616Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sssc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-26T11:58:09.616Z] CLI Version:   13.7.5
+[debug] [2024-04-26T11:58:09.616Z] Platform:      win32
+[debug] [2024-04-26T11:58:09.616Z] Node Version:  v20.11.0
+[debug] [2024-04-26T11:58:09.617Z] Time:          Fri Apr 26 2024 16:58:09 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-04-26T11:58:09.617Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-26T11:58:09.710Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-26T11:58:09.710Z] > authorizing via signed-in user (humayunshakeel576@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sssc\Desktop\nextdotsbit3 - Copy
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-26T11:58:15.353Z] Using project from CLI flag: dotbit-1
+[debug] [2024-04-26T11:58:15.356Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dotbit-1 [none]
+[debug] [2024-04-26T11:58:16.624Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dotbit-1 403
+[debug] [2024-04-26T11:58:16.624Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dotbit-1 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-04-26T11:58:16.626Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-04-26T11:58:17.895Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\sssc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\sssc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:299:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project dotbit-1. Please make sure the project exists and your account has permission to access it.

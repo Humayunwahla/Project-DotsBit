@@ -33,7 +33,7 @@ function Navbar() {
             </div>
             <div className='mt-8 lg:mt-0'>
                <Link href={"/Touch"}> <button className='NavBtn sm:flex sm:items-center sm:justify-center hidden'>
-                   <p className='NavBtnCont '><span className=" font-poppins">Schedule a Meeting</span></p>
+                   <p className='NavBtnCont '><span className=" font-poppins text-white">Schedule a Meeting</span></p>
                 </button></Link>
             </div>
         

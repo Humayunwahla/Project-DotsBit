@@ -32,7 +32,6 @@ export default function Home() {
   <Design/>
   <Service/>
   <Expertise/>
-  
   <Team/>
   <Testimonial/>
   <Footer/>

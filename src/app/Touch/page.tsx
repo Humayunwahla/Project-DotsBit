@@ -107,7 +107,7 @@ function Touch() {
            </div> 
            </div>
            <div className=''>
-          <button type='submit' className='touchBtn font-poppins'><span className=' font-poppins'>Schedule a Meeting</span></button>
+          <button type='submit' className='touchBtn font-poppins'><span className=' font-poppins text-white'>Schedule a Meeting</span></button>
         </div>
         </div>
         </form>

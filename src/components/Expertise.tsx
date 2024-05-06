@@ -1,8 +1,10 @@
 import React from 'react'
 import pic1 from '../assets/icon/pic1.png'
+
 import pic2 from '../assets/icon/pic2.png'
 import pic3 from '../assets/icon/pic3.png'
 import pic4 from '../assets/icon/pic4.png'
+import pic5 from '../assets/icon/pic5.png'
 import pic6 from '../assets/icon/pic6.png'
 import pic7 from '../assets/icon/pic7.png'
 import pic8 from '../assets/icon/pic8.png'
@@ -65,7 +67,7 @@ function Expertise() {
                 <div className='flex flex-row gap-8'>
                     <div className='expertBox animate-wiggle w-[70px] md:w-[139px] h-[40px] md:h-[79px]'>
                     <div className=''>
-                 <Image src={pic3} alt="" className='m-auto pt-3 ' />
+                 <Image src={pic3} alt="" className='m-auto pt-3 w-auto h-auto ' />
                  </div>
                 </div>
 

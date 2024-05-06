@@ -34,40 +34,24 @@ function Design() {
             <div className=''>
                 <h1 className='sm:designH  text-center lg:text-left md:text-6xl text-4xl'><p className='font-cocosharp mt-10'>Designing Dreams, <br/>Developing Realities</p></h1>
             </div>
-            <div className='flex flex-col lg:flex-row gap-[62px] mt-20'>
+            <div className=' grid grid-cols-1 justify-items-center md:grid-cols-2 items-center  grid-flow-row gap-[62px] mt-20'>
                 {userData.map((user)=>(
                     <div key={user.id} className='flex flex-col' >
-                    <Image src={user.thumbnail} width={1000} height={1000} alt="" className=''  />
+                    <Image src={user.thumbnail} width={1000} height={1000} alt="" className='rounded-xl'  />
                     <h1 className='designH2'><span className=' font-poppins'>{user.name}</span></h1>
-                    <p className='designP'><span className=' font-poppins'>{user.description}</span></p>
+                    <p className=' text-md'><span className=' font-poppins'>{user.description}</span></p>
                 </div>
                 ))}
                 
-                {/*<div>
-                    <Image src={design2} alt=""  />
-                    <h1 className='designH2'>Basically</h1>
-                    <p className='designP'>Master Fluent and Direct Speech, Minus the Fillers. 
-                    Enhance your communication skills effortlessly</p>
-                </div>*/}
+                
             </div>
 
 
 
-          {/**  <div className='flex flex-col md:flex-row gap-[62px] mt-10'>
-                <div>
-                    <Image src={design3} alt="" />
-                    <h1 className='designH2'>Lifedata</h1>
-                    <p className='designP'>Your simple, powerful tracking and visualization tool for measuring and monitoring what matters most</p>
-                </div>
-                <div>
-                    <Image src={design4} alt="" />
-                    <h1 className='designH2'>Digital Agency</h1>
-                    <p className='designP'>Plannerli help parents to assign a task to their children</p>
-                </div>
-            </div> */}
+          
            <div className='text-center my-[40px] '>
            <Link href={"/work"}> <button className='designBtn  mb-8'>
-           <p className='font-poppins'> Explore more </p>
+           <p className='font-poppins text-white'> Explore more </p>
             </button></Link>
            </div>
        </div>

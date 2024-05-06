@@ -41,6 +41,9 @@
 } */
 .Background3{
   background-image: url('../assets/Background-4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
  
 
 }
@@ -48,6 +51,7 @@
   background-image: url('../assets/about.png'); 
   width: auto;
   height: auto;
+  background-size: cover;
 }
 .fontlogo{
  
@@ -236,6 +240,7 @@ background: rgba(255, 255, 255, 1);
 .teamBox{
   width: 217px;
 height: 301px;
+
 
 }
 .teamH{

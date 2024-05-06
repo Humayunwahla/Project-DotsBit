@@ -38,8 +38,8 @@ function HeroSection() {
       {/** 2nd dev*/}
       <div className='  lg:w-2/4 text-center lg:py-20 md:py-10 '>
           <h1 className=' font-cocosharp text-center mt-8  lg:text-5xl text-xl sm:text-3xl '>An Trusted Partner With Unlimited Possibilities</h1>
-<p className='font-poppins text-center homeP text-sm  mt-6'><span className="font-poppins">Elevating Ideas, Crafting Experiences: Where<br/> Design Meets Development!</span></p>
-<button className='BtnHome mt-6 '><p className="font-poppins">Hire Us</p></button>
+<p className='font-poppins text-center homeP text-lg xl:text-2xl  mt-6'><span className="font-poppins">Elevating Ideas, Crafting Experiences: Where<br/> Design Meets Development!</span></p>
+<button className='BtnHome mt-6 '><p className="font-poppins text-white">Hire Us</p></button>
         </div>
      
 

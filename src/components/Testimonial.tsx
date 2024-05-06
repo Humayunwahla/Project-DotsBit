@@ -10,20 +10,20 @@ function Testimonial() {
     <div className='flex flex-col lg:flex-row text-center lg:mx-[126px] mx-[50px] gap-8 '>
 <div className='w-1/6 text-left'><h1 className=' aboutH mt-24'><p className='font-cocosharp'>Testimonials</p></h1></div>
 <div className='lg:w-5/6 text-left'>
-    <p className=' font-poppins text-xl lg:mt-24 mt-10'> Our work spans a range of sectors and disciplines and we bring this widespread experience to the table with every project</p>
+    <p className=' font-poppins text-xl lg:mt-24 mt-10'> Hear from our satisfied customers who have experienced tangible benefits and transformative outcomes through our services.</p>
 </div>
 </div>
 
-<div className='mt-28  mx-auto  justify-center  '>
+<div className='mt-28 justify-center  '>
 
-    <div className='flex flex-col mb-10 xl:mx-[60px] mx-[50px] gap-8 items-center xl:flex-row  '>
+    <div className='flex flex-col justify-center mb-10 xl:mx-[60px] mx-[50px] gap-8 items-center xl:flex-row  '>
         <div className='flex flex-col md:flex-row gap-8 md:mb-10'>
         <div className='testimonialBox'>
             <div className=''>
-               <p className='font-poppins'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               <p className='font-poppins text-left p-4 mt-3'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris”</p>
-         <div className='flex flex-row mt-52 ml-5 gap-2'>
+         <div className='flex flex-row mt-44 ml-5 gap-2'>
          <div>
             <Image src={pic1} alt="" />
          </div>
@@ -38,10 +38,10 @@ function Testimonial() {
 
         <div className='testimonialBox xl:-translate-y-9'>
             <div className=''>
-            <p className='font-poppins'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <p className='font-poppins text-left p-4 mt-3'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris”</p>
-         <div className='flex flex-row mt-52 ml-5 gap-2'>
+         <div className='flex flex-row mt-44 ml-5 gap-2'>
          <div>
             <Image src={pic1} alt="" />
          </div>
@@ -54,9 +54,9 @@ function Testimonial() {
          </div>
         </div>
         </div>
-        <div className='flex flex-col md:flex-row gap-8 mb-10'>
+        <div className='flex flex-col  justify-center md:flex-row gap-8 mb-10'>
 
-        <div className='testimonialBox testiBg'>
+        <div className='testimonialBox testiBg  '>
             <div className=''>
                 <div className='mx-24 mt-48'>
                     <Image src={play} alt=""  className=''/>
@@ -76,10 +76,10 @@ function Testimonial() {
 
         <div className='testimonialBox xl:-translate-y-9'>
             <div className=''>
-            <p className='font-poppins'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <p className='font-poppins text-left p-4 mt-3'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris”</p>
-         <div className='flex flex-row mt-52 ml-5 gap-2'>
+         <div className='flex flex-row mt-44 ml-5 gap-2'>
          <div>
             <Image src={pic1} alt="" />
          </div>
